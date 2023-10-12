@@ -1,5 +1,5 @@
 ---
-title: 'Buzikovo dilo 1'
+title: 'Buzikovo dilo xyz'
 excerpt: 'Tak to je brutal'
 coverImage: '/assets/blog/buzikovo-dilo-1/strapon.jpeg'
 date: '2022-03-16T05:35:07.322Z'
