@@ -1,10 +1,10 @@
 ---
-title: 'Atelier Hermanova 34 - Praha'
+title: '6/2021 Atelier Hermanova 34, Praha'
 excerpt: 'Tak to je brutal'
-coverImage: 'public/assets/200-atelier-hermanova-34/1.JPG'
+coverImage: '/assets/200-atelier-hermanova-34/1.JPG'
 date: '2022-03-17T05:35:07.322Z'
 author:
-  name: Dalik Buzik
+  name: (C) T0TALBRUTAL, Svobodovablaha, Turboprojekt
   picture: '/assets/blog/authors/jj.jpeg'
 ogImage:
   url: '/assets/blog/buzikovo-dilo-1/strapon.jpeg'
