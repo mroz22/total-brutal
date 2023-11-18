@@ -4,12 +4,12 @@ const Intro = () => {
       <h1 className="text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
         T0TALBRUTAL
       </h1>
-      <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
+      <h4 className="text-center md:text-left text-md mt-5 md:pl-8">
        <div>
        info@totalbrutal.cz{' '}
        </div> 
        <div>
-       721761947{' '}
+       +420 721761947{' '}
        </div> 
       </h4>
     </section>
