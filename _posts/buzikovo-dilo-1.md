@@ -1,6 +1,6 @@
 ---
 title: 'Buzikovo dilo 1'
-excerpt: 'Tak to je brutal'
+excerpt: 'Tak to je brutal dilo 1'
 coverImage: '/assets/blog/buzikovo-dilo-1/strapon.jpeg'
 date: '2022-03-16T05:35:07.322Z'
 author:
@@ -10,7 +10,7 @@ ogImage:
   url: '/assets/blog/buzikovo-dilo-1/strapon.jpeg'
 ---
 
-To je ale dilo. Moew. Totalne vsechno pragmaticke. Meow.
+Dilo 1 Dilo 1 Dilo 1 Dilo 1 Dilo 1 
 
 ## Vyjebany nadpis druhe urovne
 

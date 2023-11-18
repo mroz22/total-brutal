@@ -22,24 +22,36 @@ const PostPreview = ({
   slug,
 }: Props) => {
   return (
-    <div>
-      <div className="mb-5">
-        <CoverImage slug={slug} title={title} src={coverImage} />
+    <div className="flex flex-row" style={{ 'borderTop': '2px black dashed'}}>
+      <div className="flex flex-col">
+       <h3 className="text-3xl mb-3 leading-snug">
+          <Link
+            as={`/posts/${slug}`}
+            href="/posts/[slug]"
+            className="hover:underline text-sm"
+          >
+            <DateFormatter dateString={date} />
+            {' '}
+            {title}
+          </Link>
+        </h3>
+        <div>
+        {/* <p className="text-lg leading-relaxed mb-4">{excerpt}</p> */}
+        </div>
+        
+        <div>
+        <Avatar name={author.name} picture={author.picture} />
+
       </div>
-      <h3 className="text-3xl mb-3 leading-snug">
-        <Link
-          as={`/posts/${slug}`}
-          href="/posts/[slug]"
-          className="hover:underline"
-        >
-          {title}
-        </Link>
-      </h3>
-      <div className="text-lg mb-4">
-        <DateFormatter dateString={date} />
+       
+     
       </div>
-      <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-      <Avatar name={author.name} picture={author.picture} />
+
+ 
+      <div className="mb-5" style={{ position: 'relative', top: '-24px', zIndex: '-1'}}>
+          <CoverImage slug={slug} title={title} src={coverImage} />
+        </div>
+       
     </div>
   )
 }
