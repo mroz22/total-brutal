@@ -1,10 +1,10 @@
 ---
-title: 'Buzikovo dilo 3'
+title: '11/2021 Narran'
 excerpt: 'Tak to je brutal dilo 3'
-coverImage: '/assets/blog/buzikovo-dilo-1/strapon.jpeg'
+coverImage: 'public/assets/300-narran/1.jpeg'
 date: '2022-03-16T05:35:07.322Z'
 author:
-  name: Dalik Buzik
+  name: (C) Rudolf Architects, T0TALBRUTAL
   picture: '/assets/blog/authors/jj.jpeg'
 ogImage:
   url: '/assets/blog/buzikovo-dilo-1/strapon.jpeg'

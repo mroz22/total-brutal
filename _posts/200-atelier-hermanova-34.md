@@ -1,7 +1,7 @@
 ---
-title: 'Buzikovo dilo 2'
+title: 'Atelier Hermanova 34 - Praha'
 excerpt: 'Tak to je brutal'
-coverImage: '/assets/blog/buzikovo-dilo-1/strapon.jpeg'
+coverImage: 'public/assets/200-atelier-hermanova-34/1.JPG'
 date: '2022-03-17T05:35:07.322Z'
 author:
   name: Dalik Buzik
