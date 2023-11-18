@@ -43,9 +43,7 @@ const PostPreview = ({
         <Avatar name={author.name} picture={author.picture} />
 
       </div>
-       
-     
-      </div>
+    </div>
 
  
       <div style={{  zIndex: '1'}}>
