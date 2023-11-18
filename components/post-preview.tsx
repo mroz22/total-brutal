@@ -48,7 +48,7 @@ const PostPreview = ({
       </div>
 
  
-      <div className="mb-5" style={{ position: 'relative', top: '-24px', zIndex: '-1'}}>
+      <div style={{  zIndex: '1'}}>
           <CoverImage slug={slug} title={title} src={coverImage} />
         </div>
        
