@@ -22,7 +22,7 @@ const PostPreview = ({
   slug,
 }: Props) => {
   return (
-    <div className="flex flex-row" style={{ 'borderTop': '2px black dashed'}}>
+    <div className="flex flex-col md:flex-row md:justify-between" style={{ 'borderTop': '2px black dashed'}}>
       <div className="flex flex-col">
        <h3 className="text-3xl mb-3 leading-snug">
           <Link
@@ -44,11 +44,9 @@ const PostPreview = ({
 
       </div>
     </div>
-
- 
-      <div style={{  zIndex: '1'}}>
-          <CoverImage slug={slug} title={title} src={coverImage} />
-        </div>
+    <div className='md:w-5/6 max-w-2xl'>
+        <CoverImage slug={slug} title={title} src={coverImage} />
+    </div>
        
     </div>
   )
