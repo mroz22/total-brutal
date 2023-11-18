@@ -44,7 +44,7 @@ const PostPreview = ({
 
       </div>
     </div>
-    <div className='md:w-5/6 max-w-2xl'>
+    <div className='md:w-5/6 max-w-3xl'>
         <CoverImage slug={slug} title={title} src={coverImage} />
     </div>
        
