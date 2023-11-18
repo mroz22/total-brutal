@@ -10,7 +10,7 @@ ogImage:
   url: '/assets/blog/buzikovo-dilo-1/strapon.jpeg'
 ---
 
-Dilo 1 Dilo 1 Dilo 1 Dilo 1
+Attic Veletrzni, Praha
 
 ## Vyjebany nadpis druhe urovne
 
