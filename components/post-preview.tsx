@@ -30,8 +30,8 @@ const PostPreview = ({
             href="/posts/[slug]"
             className="hover:underline text-sm"
           >
-            {/* <DateFormatter dateString={date} />
-            {' '} */}
+            {date} 
+            {'\n'}
             {title}
           </Link>
         </h3>
