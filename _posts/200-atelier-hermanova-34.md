@@ -1,8 +1,8 @@
 ---
-title: '6/2021 Atelier Hermanova 34, Praha'
+title: 'Atelier Hermanova 34, Praha'
 excerpt: 'Tak to je brutal'
 coverImage: '/assets/200-atelier-hermanova-34/1.JPG'
-date: '2022-03-17T05:35:07.322Z'
+date: '6/2021'
 author:
   name: (C) T0TALBRUTAL, Svobodovablaha, Turboprojekt
   picture: '/assets/blog/authors/jj.jpeg'

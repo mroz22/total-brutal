@@ -1,8 +1,8 @@
 ---
-title: '11/2021 Narran'
+title: 'Narran Laser'
 excerpt: 'Tak to je brutal dilo 3'
 coverImage: '/assets/300-narran/1.jpeg'
-date: '2022-03-16T05:35:07.322Z'
+date: '11/2021'
 author:
   name: (C) Rudolf Architects, T0TALBRUTAL
   picture: '/assets/blog/authors/jj.jpeg'

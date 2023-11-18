@@ -1,8 +1,8 @@
 ---
-title: '3/2023 Podkrovi Veletrzni, Praha'
+title: 'Podkrovi Veletrzni, Praha'
 excerpt: 'Tak to je brutal dilo 1'
 coverImage: '/assets/100-veletrzni-puda/1.JPG'
-date: '2022-03-16T05:35:07.322Z'
+date: '3/2023'
 author:
   name: (C) T0TALBRUTAL, Svobodovablaha
   picture: '/assets/blog/authors/jj.jpeg'
