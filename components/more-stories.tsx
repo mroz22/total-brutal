@@ -5,14 +5,24 @@ type Props = {
   posts: Post[]
 }
 
+
 const MoreStories = ({ posts }: Props) => {
+  console.log(posts);
   return (
     <section>
       {/* <h2 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
         More Stories
       </h2> */}
       <div>
-        {posts.map((post) => (
+        {posts.sort(function (a, b) {
+          if (a.slug < b.slug) {
+            return -1;
+          }
+          if (a.slug > b.slug) {
+            return 1;
+          }
+          return 0;
+        }).map((post) => (
           <PostPreview
             key={post.slug}
             title={post.title}
