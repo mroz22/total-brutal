@@ -1,10 +1,10 @@
 ---
-title: 'Buzikovo dilo 3'
+title: 'RD Svor'
 excerpt: 'Tak to je brutal dilo 3'
-coverImage: '/assets/blog/buzikovo-dilo-1/strapon.jpeg'
-date: '2022-03-16T05:35:07.322Z'
+coverImage: '/assets/400-rd-svor/1.jpg'
+date: '8/2021'
 author:
-  name: Dalik Buzik
+  name: (C) T0TALBRUTAL
   picture: '/assets/blog/authors/jj.jpeg'
 ogImage:
   url: '/assets/blog/buzikovo-dilo-1/strapon.jpeg'
