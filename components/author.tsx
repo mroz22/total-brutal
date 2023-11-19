@@ -7,8 +7,7 @@ type Props = {
 
 const Author = ({ link, name }: Props) => {
   return (
-    <Link href={link}  className="hover:underline text-sm"> {name}</Link>
-    
+    <Link href={link} className="hover:underline text-sm"> {name}</Link>
   )
 }
 

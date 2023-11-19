@@ -4,7 +4,7 @@ excerpt: 'Tak to je brutal dilo 3'
 coverImage: '/assets/300-narran/1.jpeg'
 date: '11/2021'
 author:
-  - name: (C) Rudolf Architects, T0TALBRUTAL
+  - name:   Rudolf Architects, T0TALBRUTAL
     link: 'todo'
 ogImage:
   url: '/assets/300-narran/1.jpeg'
