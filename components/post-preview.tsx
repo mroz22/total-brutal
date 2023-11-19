@@ -37,7 +37,7 @@ const PostPreview = ({
         <Authors authors={author} />
       </div>
 
-      <div className='md:max-w-3xl'>
+      <div className='md:max-w-4xl'>
           <CoverImage slug={slug} title={title} src={coverImage} />
       </div>
 
