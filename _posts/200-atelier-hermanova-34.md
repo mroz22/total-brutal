@@ -7,7 +7,7 @@ author:
   name: (C) T0TALBRUTAL, Svobodovablaha, Turboprojekt
   picture: '/assets/blog/authors/jj.jpeg'
 ogImage:
-  url: '/assets/blog/buzikovo-dilo-1/strapon.jpeg'
+  url: '/assets/200-atelier-hermanova-34/1.JPG'
 ---
 
 To je ale dilo. Moew. Totalne vsechno pragmaticke. Meow.

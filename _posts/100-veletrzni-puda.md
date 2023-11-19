@@ -7,7 +7,7 @@ author:
   name: (C) T0TALBRUTAL, Svobodovablaha
   picture: '/assets/blog/authors/jj.jpeg'
 ogImage:
-  url: '/assets/blog/buzikovo-dilo-1/strapon.jpeg'
+  url: '/assets/100-veletrzni-puda/1.JPG'
 ---
 
 Attic Veletrzni, Praha
@@ -18,4 +18,5 @@ a nejake dalsi kecy
 
 a takto se pridava obrazek 
 
-![Obrazek](/assets/blog/buzikovo-dilo-1/strapon.jpeg)
+![Obrazek](/assets/100-veletrzni-puda/1.JPG)
+![Obrazek](/assets/100-veletrzni-puda/1.JPG)

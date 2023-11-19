@@ -7,7 +7,7 @@ author:
   name: (C) Rudolf Architects, T0TALBRUTAL
   picture: '/assets/blog/authors/jj.jpeg'
 ogImage:
-  url: '/assets/blog/buzikovo-dilo-1/strapon.jpeg'
+  url: '/assets/300-narran/1.jpeg'
 ---
 
 Dilo 1 Dilo 1 Dilo 1 Dilo 1 
