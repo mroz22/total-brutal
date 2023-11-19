@@ -4,8 +4,8 @@ excerpt: 'Tak to je brutal dilo 3'
 coverImage: '/assets/400-rd-svor/1.jpg'
 date: '8/2021'
 author:
-  name: (C) T0TALBRUTAL
-  link: 'todo'
+  - name: (C) T0TALBRUTAL
+    link: 'todo'
 ogImage:
   url: '/assets/400-rd-svor/1.jpg'
 ---
