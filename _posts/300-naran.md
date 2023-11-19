@@ -5,7 +5,7 @@ coverImage: '/assets/300-narran/1.jpeg'
 date: '11/2021'
 author:
   name: (C) Rudolf Architects, T0TALBRUTAL
-  picture: '/assets/blog/authors/jj.jpeg'
+  link: 'todo'
 ogImage:
   url: '/assets/300-narran/1.jpeg'
 ---

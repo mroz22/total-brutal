@@ -5,7 +5,7 @@ coverImage: '/assets/400-rd-svor/1.jpg'
 date: '8/2021'
 author:
   name: (C) T0TALBRUTAL
-  picture: '/assets/blog/authors/jj.jpeg'
+  link: 'todo'
 ogImage:
   url: '/assets/400-rd-svor/1.jpg'
 ---

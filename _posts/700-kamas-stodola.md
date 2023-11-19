@@ -5,7 +5,7 @@ coverImage: '/assets/blog/buzikovo-dilo-1/strapon.jpeg'
 date: '2022-03-16T05:35:07.322Z'
 author:
   name: Dalik Buzik
-  picture: '/assets/blog/authors/jj.jpeg'
+  link: 'todo'
 ogImage:
   url: '/assets/blog/buzikovo-dilo-1/strapon.jpeg'
 ---

@@ -1,14 +1,14 @@
+import Link from 'next/link'
+
 type Props = {
   name: string
-  picture: string
+  link: string
 }
 
-const Avatar = ({ name, picture }: Props) => {
+const Avatar = ({ link, name }: Props) => {
   return (
-    <div className="flex items-center">
-      {/* <img src={picture} className="w-12 h-12 rounded-full mr-4" alt={name} /> */}
-      <div className="text-sm">{name}</div>
-    </div>
+    <Link href={link}  className="hover:underline text-sm"> {name}</Link>
+    
   )
 }
 

@@ -35,14 +35,13 @@ const PostPreview = ({
             {title}
           </Link>
         </h3>
-        <div>
-        {/* <p className="text-lg leading-relaxed mb-4">{excerpt}</p> */}
-        </div>
+    
         
-        <div>
-        <Avatar name={author.name} picture={author.picture} />
 
-      </div>
+           
+        <Avatar link={author.link} name={author.name}  />
+
+      
     </div>
     <div className='md:w-5/6 max-w-3xl'>
         <CoverImage slug={slug} title={title} src={coverImage} />

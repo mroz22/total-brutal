@@ -5,7 +5,7 @@ coverImage: '/assets/100-veletrzni-puda/1.JPG'
 date: '3/2023'
 author:
   name: (C) T0TALBRUTAL, Svobodovablaha
-  picture: '/assets/blog/authors/jj.jpeg'
+  link: 'https://svobodovablaha.com/'
 ogImage:
   url: '/assets/100-veletrzni-puda/1.JPG'
 ---
