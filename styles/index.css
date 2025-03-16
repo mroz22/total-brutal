@@ -1,12 +1,384 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
+@font-face {
+  font-family: "W95";
+  src: url("/fonts/w95fa.woff") format("woff");
+  src: url("/fonts/w95fa.woff2") format("woff2");
 
-@layer base {
-    @font-face {
-        font-family: "W95FA";
-        src: url("/fonts/W95FA/W95FA.otf");
+}
+/* Base typography */
+html,
+body {
+  height: 100%;
+  font-family: W95, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  background: #fff;
+  /* The font size will never be smaller than 0.8rem,
+     will scale with the viewport (1vw + 0.8rem),
+     and will never be larger than 1.2rem. */
+  font-size: clamp(0.7rem, 0.6vh + 0.8rem, 2rem);
+}
+
+.ascii {
+    text-wrap: initial !important;
+    width: 100vh !important;
+}
+
+/* Logo: always fixed at top, full width, stretched horizontally */
+.logo {
+  background: lightblue;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: auto;
+  width: auto;
+  padding-top: 2vw;
+  padding-left: 0.4rem;
+  text-align: left;
+  font-family: monospace;
+  font-size: clamp(0.5rem, 1.5vh, 3rem);
+  z-index: 1;
+  color: #000000;
+  transition: transform 0.3s ease;
+  transform: rotate(-90deg) translateY(100%);
+  transform-origin: bottom left;
+}
+
+.logo .ascii {
+  align-items: left; /* center each row horizontally */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* allow wrapping, like text */
+  justify-content: left; /* center rows if desired */
+  margin: 0; /* remove default pre margins */
+  padding: 0;
+  white-space: pre; /* Preserve formatting */
+}
+
+/* Main area: covers the entire viewport */
+.main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+}
+
+.landing-image {
+  position: relative;
+  height: 100vh; /* Force container height to equal viewport height */
+  overflow: hidden;
+  padding: 0.3rem;
+}
+
+.landing-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Image scales and crops to cover container */
+}
+
+.landing-image img.gallery {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect: slight scale-up */
+.landing-image img.gallery:hover {
+  box-shadow: 3px 3px #b9b9b9;
+}
+
+/* Active (click) effect: slight scale-down */
+.landing-image img.gallery:active {
+  transform: scale(0.995);
+  box-shadow: 2.5px 2.5px #b9b9b9;
+}
+
+/* Contacts: fixed near top left, below the logo */
+.contacts {
+  position: fixed;
+  bottom: 14vh;
+  transform: translateY(-60%);
+  padding-left: 2vw;
+  z-index: 3;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.contacts p {
+  margin-bottom: 2vh;
+}
+
+.contacts a {
+  display: inline-block; /* Allow border to wrap the text */
+  text-decoration: none; /* Remove default underline */
+}
+
+/* Hover state */
+
+.contacts,
+a:link,
+.contacts a:visited {
+  color: #383838;
+  text-shadow: 2px 2px rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.contacts a:hover {
+  color: rgb(0, 0, 0);
+  text-shadow: 3px 3px rgb(233, 81, 245);
+  border-color: rgb(57, 255, 196);
+  text-decoration-color: rgb(0, 0, 0); /* or any color you want */
+  text-decoration-thickness: 2px; /* adjust the weight */
+  text-underline-offset: 1vh; /* adjust the distance from the text */
+}
+
+.contacts a:active {
+  color: #ffe800;
+  text-decoration: none;
+}
+
+/* Billing: locked to the bottom left corner */
+.billing {
+  position: fixed;
+  bottom: 2.3vh;
+  padding-left: 2vw;
+  text-shadow: 1px 1px rgb(255, 255, 255);
+  z-index: 3;
+  transition: text-shadow 0.3s ease;
+  text-decoration: none; /* Remove default underline */ /* Optional: add a little padding */
+  margin-bottom: 0.5rem;
+  color: #383838;
+}
+
+.billing p {
+  margin-bottom: 1.6vh;
+}
+
+.billing a {
+  cursor: pointer;
+}
+
+.billing,
+a:link,
+.billing a:visited {
+  text-decoration: none; /* Remove default underline */
+}
+
+.billing a:hover {
+  color: black;
+  text-shadow: 2px 2px rgb(255, 227, 57);
+}
+
+/* Toggle styling for billing details */
+details summary {
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+  outline: none;
+}
+
+/* When toggled open, display extra content above the summary */
+details[open] {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.toggle-content {
+  margin-top: 10px;
+}
+.toggle-content img {
+  max-width: 150px;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Tooltip styling */
+.tooltip {
+  position: absolute;
+  font-size: 1.8vh;
+  pointer-events: none;
+  z-index: 1000;
+  white-space: nowrap;
+  color: rgb(151, 168, 177);
+  transition: opacity 0.2s ease;
+  padding-left: 0.6rem;
+  opacity: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 80px; /* Reserve space at bottom for side (contacts & billing) */
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*** MEDIA HANDHELD PORTRAIT MODE ***/
+
+@media (max-width: 768px) and (orientation: portrait) and (max-aspect-ratio: 9/10) {
+
+    .ascii {
+        background: green;
+        text-wrap: initial !important;
+        /* todo: this is retarded */
+        width: 101vw !important;
     }
+
+  /* Logo remains at the top as a static element */
+  .logo {
+    position: auto;
+    writing-mode: horizontal-tb; /* or vertical-rl */
+    top: 0;
+    left: 0;
+    transform: none; /* no rotation */
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    font-family: "w95", sans-serif;
+    font-size: clamp(0.3rem, 1.5vw, 3rem);
+    color: azure;
+    overflow-wrap: unset; /* Allow long words to break */
+    word-break: keep-all; /* Break words if necessary */
+    overflow: hidden;
+    padding-top: 0.4rem;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    scroll-padding: 0.4rem;
+    z-index: 5;
+  }
+
+  .logo .ascii {
+    align-items: center; /* center each row horizontally */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* allow wrapping, like text */
+    justify-content: left; /* center rows if desired */
+    margin: 0; /* remove default pre margins */
+    padding: 0.2rem;
+    white-space: pre; /* Preserve formatting */
+  }
+
+  /* Reorder children so that .main (landing image) comes before .side */
+  .main {
+    order: 1;
+    width: 100%;
+  }
+  .side {
+    order: 2;
+    width: 100%;
+  }
+
+  /* Container uses normal document flow */
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px; /* Reserve space at bottom for side (contacts & billing) */
+  }
+
+  /* Main landing image: full width, height auto to maintain aspect ratio */
+  .main {
+    position: relative;
+    width: 100%;
+    padding: 0;
+  }
+  .landing-image {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .landing-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* Move side content (contacts and billing) to the bottom, full width */
+  .side {
+    position: static;
+    width: 100%;
+    background: rgba(
+      255,
+      255,
+      255,
+      0.9
+    ); /* optional background for readability */
+    padding: 10px;
+    z-index: 4;
+    display: block;
+  }
+
+  /* Ensure contacts and billing items are centered */
+  .contacts {
+    position: static;
+    padding-top: 50vw;
+    width: 100%;
+    font-size: clamp(1rem, 2vw + 0.8rem, 2rem);
+    text-align: center;
+    top: unset;
+    transform: unset;
+  }
+
+  .billing {
+    position: static;
+    padding-top: 40vh;
+    width: 100%;
+    font-size: clamp(1rem, 2vw + 0.8rem, 2rem);
+    text-align: center;
+  }
+
+  .contacts p {
+    margin-bottom: 4vh;
+  }
+  .billing p {
+    margin-bottom: 2vh;
+  }
+
+  /* Toggle styling for any details inside the side section remains similar */
+  details summary {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    outline: none;
+  }
+
+  details[open] {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .toggle-content {
+    margin-top: 10px;
+  }
+
+  .toggle-content img {
+    max-width: 150px;
+    display: block;
+    margin-top: 10px;
+  }
 }
