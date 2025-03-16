@@ -1,4 +1,11 @@
-export const Intro = () => {
+import Post from "../../interfaces/post";
+import  MoreStories  from "../more-stories";
+
+type Props = {
+  allPosts: Post[];
+};
+
+export const Intro = ({ allPosts }: Props) => {
   return (
     <div className="container">
       <div className="logo">
@@ -45,6 +52,7 @@ export const Intro = () => {
       </div>
       <div className="main">
         <div className="landing-image">
+          {allPosts.length > 0 && <MoreStories posts={allPosts} />}
           <img
             src="images/landing.jpg"
             alt="work in progress..."
