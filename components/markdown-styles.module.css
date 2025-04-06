@@ -1,18 +1,21 @@
 .markdown {
-  @apply text-sm leading-relaxed;
+  max-width: 100%;
+}
+
+.markdown img {
+  max-width: 100%;
+  height: auto;
 }
 
 .markdown p,
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
-  @apply my-6;
+  list-style-type: none;
 }
 
 .markdown h2 {
-  @apply text-3xl mt-12 mb-4 leading-snug;
 }
 
 .markdown h3 {
-  @apply text-2xl mt-8 mb-4 leading-snug;
 }
