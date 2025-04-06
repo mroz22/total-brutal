@@ -9,7 +9,6 @@
   font-family: "W95";
   src: url("/fonts/w95fa.woff") format("woff");
   src: url("/fonts/w95fa.woff2") format("woff2");
-
 }
 /* Base typography */
 html,
@@ -26,36 +25,34 @@ body {
 }
 
 .ascii {
-    text-wrap: initial !important;
-    width: 100vh !important;
+  text-wrap: initial !important;
+  font-size: calc(100vh / 66.27) !important;
+  width: 100vh;
 }
 
 /* Logo: always fixed at top, full width, stretched horizontally */
 .logo {
-  background: lightblue;
   position: fixed;
   bottom: 0;
   left: 0;
   height: auto;
   width: auto;
-  padding-top: 2vw;
-  padding-left: 0.4rem;
   text-align: left;
   font-family: monospace;
-  font-size: clamp(0.5rem, 1.5vh, 3rem);
   z-index: 1;
   color: #000000;
   transition: transform 0.3s ease;
   transform: rotate(-90deg) translateY(100%);
   transform-origin: bottom left;
+  padding-top: 2vw;
+
+  line-height: 1.1;
 }
 
 .logo .ascii {
-  align-items: left; /* center each row horizontally */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; /* allow wrapping, like text */
-  justify-content: left; /* center rows if desired */
   margin: 0; /* remove default pre margins */
   padding: 0;
   white-space: pre; /* Preserve formatting */
@@ -241,13 +238,12 @@ details[open] {
 /*** MEDIA HANDHELD PORTRAIT MODE ***/
 
 @media (max-width: 768px) and (orientation: portrait) and (max-aspect-ratio: 9/10) {
-
-    .ascii {
-        background: green;
-        text-wrap: initial !important;
-        /* todo: this is retarded */
-        width: 101vw !important;
-    }
+  .ascii {
+    /* sort of works */
+    font-size: max(calc(100vw / 68.592), 6.92501px) !important;
+    min-width: 480px;
+    width: auto;
+  }
 
   /* Logo remains at the top as a static element */
   .logo {
@@ -260,8 +256,6 @@ details[open] {
     height: max-content;
     text-align: center;
     font-family: "w95", sans-serif;
-    font-size: clamp(0.3rem, 1.5vw, 3rem);
-    color: azure;
     overflow-wrap: unset; /* Allow long words to break */
     word-break: keep-all; /* Break words if necessary */
     overflow: hidden;
