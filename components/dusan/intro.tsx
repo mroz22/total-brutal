@@ -1,5 +1,5 @@
 import Post from "../../interfaces/post";
-import  MoreStories  from "../more-stories";
+import MoreStories from "../more-stories";
 
 type Props = {
   allPosts: Post[];
@@ -9,7 +9,8 @@ export const Intro = ({ allPosts }: Props) => {
   return (
     <div className="container">
       <div className="logo">
-        <pre className="ascii">
+        <img className="ascii" src="/assets/logo.svg" alt="logo" />
+        {/* <pre className="ascii">
 ░        ░░░      ░░░        ░░░      ░░░  ░░░░░░░░       ░░░       ░░░  ░░░░  ░░        ░░░      ░░░  ░░░░░░░&#10;
 ▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒▒▒▒&#10;
 ▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒▒▒▒&#10;
@@ -17,7 +18,7 @@ export const Intro = ({ allPosts }: Props) => {
 ▓▓▓▓  ▓▓▓▓▓  ▓▓▓▓  ▓▓▓▓▓  ▓▓▓▓▓  ▓▓▓▓  ▓▓  ▓▓▓▓▓▓▓▓  ▓▓▓▓  ▓▓  ▓▓  ▓▓▓▓  ▓▓▓▓  ▓▓▓▓▓  ▓▓▓▓▓  ▓▓▓▓  ▓▓  ▓▓▓▓▓▓▓&#10;
 ████  █████  ████  █████  █████        ██  ████████  ████  ██  ███  ███  ████  █████  █████        ██  ███████&#10;
 ████  ██████      ██████  █████  ████  ██        ██       ███  ████  ███      ██████  █████  ████  ██        █&#10;
-        </pre>
+        </pre> */}
       </div>
       <div className="side">
         <div className="contacts">
