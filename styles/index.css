@@ -62,19 +62,19 @@ body {
 .main {
   position: fixed;
   top: 0;
-  left: 0;
   right: 0;
   bottom: 0;
   z-index: 2;
   display: flex;
   align-items: right;
   justify-content: right;
+  max-width: 60vw;
 }
 
 .landing-image {
   position: relative;
   height: 100vh; /* Force container height to equal viewport height */
-  overflow: hidden;
+  overflow: scroll;
   padding: 0.3rem;
 }
 
@@ -279,8 +279,10 @@ details[open] {
 
   /* Reorder children so that .main (landing image) comes before .side */
   .main {
-    order: 1;
-    width: 100%;
+    position: relative;
+    top: 140px;
+    width: 100vw;
+    max-width: initial;
   }
   .side {
     order: 2;
@@ -295,12 +297,6 @@ details[open] {
     padding-bottom: 80px; /* Reserve space at bottom for side (contacts & billing) */
   }
 
-  /* Main landing image: full width, height auto to maintain aspect ratio */
-  .main {
-    position: relative;
-    width: 100%;
-    padding: 0;
-  }
   .landing-image {
     width: 100%;
     height: auto;
