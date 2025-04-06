@@ -240,8 +240,8 @@ details[open] {
 @media (max-width: 768px) and (orientation: portrait) and (max-aspect-ratio: 9/10) {
   .ascii {
     /* sort of works */
-    font-size: max(calc(100vw / 68.592), 6.92501px) !important;
-    min-width: 480px;
+    font-size: max(calc(100vw / 68.592), 7.72px) !important;
+    min-width: 530px;
     width: auto;
   }
 
