@@ -134,16 +134,17 @@ a:link,
 }
 
 .contacts a:hover {
-  color: rgb(0, 0, 0);
-  text-shadow: 3px 3px rgb(233, 81, 245);
+  color: rgb(255, 230, 27);
+  text-shadow: 2px 2px rgb(233, 81, 245);
   border-color: rgb(57, 255, 196);
-  text-decoration-color: rgb(0, 0, 0); /* or any color you want */
+  text-decoration-color: rgb(255, 207, 0); /* or any color you want */
   text-decoration-thickness: 2px; /* adjust the weight */
   text-underline-offset: 1vh; /* adjust the distance from the text */
 }
 
 .contacts a:active {
-  color: #ffe800;
+  color: rgb(218, 179, 15);
+  text-shadow: 2px 2px rgb(233, 81, 245);
   text-decoration: none;
 }
 

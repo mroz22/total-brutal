@@ -13,10 +13,9 @@ export default function Index({ allPosts }: Props) {
     <>
       <Layout>
         <Head>
-          <title>{`T0tal brutal`}</title>
+          <title>TOTALBRUTAL</title>
         </Head>
-        <Intro  allPosts={allPosts}/>
-     
+        <Intro allPosts={allPosts} />
       </Layout>
     </>
   );
