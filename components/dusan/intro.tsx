@@ -1,11 +1,52 @@
 import Post from "../../interfaces/post";
 import MoreStories from "../more-stories";
 
+import { useEffect } from "react";
+
 type Props = {
   allPosts: Post[];
 };
 
 export const Intro = ({ allPosts }: Props) => {
+  useEffect(() => {
+    document.addEventListener("DOMContentLoaded", function () {
+      const btcLink = document.getElementById("copy-btc");
+      const btcAddress = "bc1q2u0jn4hazg0sny3x5sclh05ehyrmjz43cmtnhf";
+      btcLink.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent default navigation
+        navigator.clipboard
+          .writeText(btcAddress)
+          .then(() => {
+            showTooltip(btcLink, "Copied!");
+          })
+          .catch((err) => {
+            console.error("Failed to copy BTC address:", err);
+          });
+      });
+      function showTooltip(link, message) {
+        // Ensure the link has a relative positioning context
+        if (getComputedStyle(link).position === "static") {
+          link.style.position = "relative";
+        }
+        // Create a tooltip element using your existing tooltip class
+        const tooltip = document.createElement("span");
+        tooltip.className = "tooltip";
+        tooltip.innerText = message;
+
+        // Append tooltip to the link
+        link.appendChild(tooltip);
+
+        // Set opacity to 1 so it shows up (overriding the CSS default of 0)
+        tooltip.style.opacity = "1";
+        // Remove tooltip after 1.5 seconds
+        setTimeout(() => {
+          if (tooltip.parentNode) {
+            tooltip.parentNode.removeChild(tooltip);
+          }
+        }, 1500);
+      }
+    });
+  }, []);
   return (
     <div className="container">
       <div className="logo">
@@ -54,11 +95,6 @@ export const Intro = ({ allPosts }: Props) => {
       <div className="main">
         <div className="landing-image">
           {allPosts.length > 0 && <MoreStories posts={allPosts} />}
-          <img
-            src="images/landing.jpg"
-            alt="work in progress..."
-            className="gallery"
-          />
         </div>
       </div>
     </div>
