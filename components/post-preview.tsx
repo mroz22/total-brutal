@@ -14,7 +14,7 @@ type Props = {
 
 const PostPreview = ({ title, coverImage, date, author, slug }: Props) => {
   return (
-    <div style={{ borderTop: "2px black solid" }}>
+    <div>
       <div>
         <h3>
           <Link
