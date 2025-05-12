@@ -22,9 +22,10 @@ const PostPreview = ({ title, coverImage, date, author, slug }: Props) => {
           style={{
             fontSize: "0.8em",
             position: "relative",
-            //
+
             top: "6.5em",
             left: "5.5em",
+
             backgroundColor: "white",
             display: "inline-block",
             padding: "0 0.1rem",
