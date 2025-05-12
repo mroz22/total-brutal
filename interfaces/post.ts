@@ -14,6 +14,7 @@ type PostType = {
 
   address: string;
   price: string;
+  size: number;
 };
 
 export default PostType;

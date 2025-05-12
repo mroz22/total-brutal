@@ -7,7 +7,7 @@ type Props = {
 const PostBody = ({ content }: Props) => {
   return (
     // todo: breakpoint for mobile
-    <div style={{ margin: "0 5em" }}>
+    <div>
       <div
         className={markdownStyles["markdown"]}
         dangerouslySetInnerHTML={{ __html: content }}

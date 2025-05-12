@@ -13,7 +13,7 @@ size: 36
 address: "Praha"
 ---
 
-Dilo 1 Dilo 1 Dilo 1 Dilo 1
+~~Dilo 1 Dilo 1 Dilo 1 Dilo 1~~
 
 # nadpis prvni urovne
 
