@@ -15,8 +15,22 @@ type Props = {
 const PostPreview = ({ title, coverImage, date, author, slug }: Props) => {
   return (
     <div>
+      <div></div>
+
       <div>
-        <h3>
+        <h3
+          style={{
+            fontSize: "0.8em",
+            position: "relative",
+            //
+            top: "6.5em",
+            left: "5.5em",
+            backgroundColor: "white",
+            display: "inline-block",
+            padding: "0 0.1rem",
+            textDecoration: "none",
+          }}
+        >
           <Link
             as={`/posts/${slug}`}
             href="/posts/[slug]"
@@ -27,10 +41,6 @@ const PostPreview = ({ title, coverImage, date, author, slug }: Props) => {
             {title}
           </Link>
         </h3>
-        <Authors authors={author} />
-      </div>
-
-      <div>
         <CoverImage slug={slug} title={title} src={coverImage} />
       </div>
     </div>

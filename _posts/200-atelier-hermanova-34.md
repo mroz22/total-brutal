@@ -12,9 +12,10 @@ author:
     link: "https://turboprojekt.cz"
 ogImage:
   url: "/assets/200-atelier-hermanova-34/1.JPG"
+price: "100.000 kc"
+size: 36
+address: "Praha"
 ---
-
-# Atelier Hermanova 34: Brutalita v architektuře
 
 Atelier Hermanova 34 je projekt, který se s ničím nepáře. Žádné kompromisy, žádné zbytečné kudrlinky – jen čistá, nekompromisní architektura ve stylu "total brutal". Tento projekt je oslavou surových materiálů, ostrých linií a nekomplikovaného přístupu k designu.
 

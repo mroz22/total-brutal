@@ -125,6 +125,10 @@ body {
 
 /* Hover state */
 
+a:visited {
+  color: black;
+}
+
 .contacts,
 a:link,
 .contacts a:visited {
